@@ -7,14 +7,14 @@ comparison:
   number_of_comparison_results: 1
 filter:
 objectives:
-  - sli: "response_time_p80"
+  - sli: "response_time_p95"
     key_sli: false
     pass:             
       - criteria:
-          - "<500"    
+          - "<600"    
     warning:        
       - criteria:
-          - "<=700"
+          - "<=800"
     weight: 1
   - sli: "error_rate"
     key_sli: false
